@@ -26,10 +26,18 @@ function clearDisplay(){
 }
 
 function calculateResult(){
-    try{
-        display.value = eval(display.value);
+    audio.currentTime = 0;
+    
+    if (numberOfClick % 2 == 1) {
+        audio.pause();
+        display.value = "";
     }
-    catch (error){
-        display.value = "Syntax Error.";
+
+    if (numberOfClick % 2 == 0) {
+        
+        audio.play();
+        display.value = "I miss you :((((";
     }
+    
+    numberOfClick = (numberOfClick + 1) % 2;
 }
