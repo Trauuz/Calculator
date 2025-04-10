@@ -9,16 +9,17 @@ function appendToDisplay(input){
 }
 
 function clearDisplay(){
+    audio.currentTime = 0;
+    
     if (numberOfClick % 2 == 1) {
         audio.pause();
-        audio.currentTime = 0;
         display.value = "";
     }
 
     if (numberOfClick % 2 == 0) {
         
         audio.play();
-        display.value = "I miss you :(( bumalik ka na pls?";
+        display.value = "I miss you :((((";
     }
     
     numberOfClick = (numberOfClick + 1) % 2;

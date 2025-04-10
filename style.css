@@ -13,12 +13,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 650px;
+    width: 350px;
 }
 
 #display {
     height: 50px;
-    width: 600px;
+    width: 330px;
     font-size: 24px;
     text-align: center;
     border: 1px solid #ffffff;
