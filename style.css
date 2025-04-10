@@ -1,3 +1,7 @@
+.wrapper {
+    width: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -13,12 +17,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 350px;
+    width: 300px;
 }
 
 #display {
     height: 50px;
-    width: 330px;
+    width: 280px;
     font-size: 24px;
     text-align: center;
     border: 1px solid #ffffff;
@@ -58,5 +62,24 @@ button {
 
 button:hover{
     box-shadow: 5px 3px 5px black;
-    
+}
+
+@media only screen and (min-width: 768px) {
+    #calculator {
+        padding: 20px;
+        width: 600px;
+    }
+    #display {
+        width: 580px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #calculator {
+        padding: 20px;
+        width: 600px;
+    }
+    #display {
+        width: 580px;
+    }
 }
